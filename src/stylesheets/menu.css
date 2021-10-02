@@ -1,0 +1,25 @@
+#menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.dish{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    gap: 100px;
+}
+
+.dish > img{
+    width: 50%;
+    height: 100%;
+}
+
+.dish h1{
+    font-size: 48px;
+}
+
+.dish span{
+    font-size: 24px;
+}
