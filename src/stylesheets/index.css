@@ -1,0 +1,49 @@
+@font-face {
+    font-family: MyOlivin;
+    src: url(../font/my_olivin/MyOlivin-Bold.ttf);
+}
+
+body{
+    margin: 0;
+    background-image: url("../images/pexels-kasumi-loffler-3535383.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:100%;
+    color: #e4e4e4;
+    font-family: MyOlivin;
+}
+
+nav{
+    display: flex;
+    gap: 1em;
+}
+
+.tab{
+    cursor: pointer;
+    background:none;
+    border: none;
+    outline: none;
+    color: #999999;
+    padding: 0;
+    font-size: 3em;
+    font-family: MyOlivin;
+}
+
+.tab:hover:not(.active-tab){
+    color: #eeeeee;
+}
+
+.active-tab{
+    color: #e83a3a;
+}
+
+#content{
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #00000099;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+    padding: 3em;
+}
