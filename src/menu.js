@@ -4,6 +4,11 @@ import chickenImg from './images/chicken.jpeg';
 import porkImg from './images/pork.jpeg';
 import fishImg from './images/fish.jpg';
 
+const steakDish = createDish('Steak', 569, steakImg);
+const fishDish = createDish('Fish', 469, fishImg)
+const porkDish = createDish('Pork', 339, porkImg);
+const chickenDish = createDish('Chicken', 399, chickenImg);
+
 function createDish(title, price, imgSrc) {
     const dish = document.createElement('div');
     dish.classList.add('dish');
@@ -34,10 +39,10 @@ function renderMenu(main, menuBtn) {
     document.querySelector('.active-tab').classList.remove('active-tab');
     menuBtn.classList.add('active-tab');
 
-    main.appendChild(createDish('Steak', 569, steakImg));
-    main.appendChild(createDish('Fish', 469, fishImg));
-    main.appendChild(createDish('Pork', 339, porkImg));
-    main.appendChild(createDish('Chicken', 399, chickenImg));
+    main.appendChild(steakDish);
+    main.appendChild(fishDish);
+    main.appendChild(porkDish);
+    main.appendChild(chickenDish);
 }
 
 export {renderMenu};
